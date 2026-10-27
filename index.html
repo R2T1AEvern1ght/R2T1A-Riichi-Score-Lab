@@ -309,7 +309,6 @@ let rounded=isPinfu&&tsumo?20:Math.ceil(fu/10)*10;if(!closed&&rounded===20)round
 let seqs=all.filter(s=>s.kind==='seq');if(closed){let seqKey=s=>s.tiles.join(',');let k=seqs.map(seqKey);let unique=[...new Set(k)];let pairs=unique.reduce((n,u)=>n+Math.floor(k.filter(x=>x===u).length/2),0);if(pairs>=2)addLocal('Ryanpeikou',3);else if(pairs>=1)addLocal('Iipeikou',1)}
 function addLocal(name,v){localHan+=v;localYaku+=v;localNames.push(`${name} +${v}`)}
 if(trip.length===4)addLocal('Toitoi',2);let closedTrips=trip.filter((s,i)=>!s.open&&!(s.kind==='trip'&&!tsumo&&wc.type==='shanpon'&&wc.idx===all.indexOf(s))).length;if(closedTrips>=3)addLocal('Sanankou',2);if(all.filter(s=>s.kind==='kan').length>=3)addLocal('Sankantsu',2);
-if(seqs.length===4&&pair==='5z'&&false){} // no-op
 let allTermHon=numbered.every(t=>t[1]==='z'||+t[0]===1||+t[0]===9);if(allTermHon&&all.some(s=>s.kind==='seq')===false)addLocal('Honroutou',2);
 let onlyHonors=numbered.every(t=>t[1]==='z');let suits=[...new Set(numbered.filter(t=>t[1]!=='z').map(t=>t[1]))];if(suits.length===1){if(numbered.some(t=>t[1]==='z'))addLocal('Honitsu',closed?3:2);else addLocal('Chinitsu',closed?6:5)}
 let everyGroupTerminal=all.every(s=>s.tiles.some(t=>t[1]==='z'||+t[0]===1||+t[0]===9))&&(pair.endsWith('z')||+pair[0]===1||+pair[0]===9);if(everyGroupTerminal&&!allTermHon&&seqs.length){
@@ -322,7 +321,7 @@ let everyGroupTerminal=all.every(s=>s.tiles.some(t=>t[1]==='z'||+t[0]===1||+t[0]
  }}
  if(trip.length>=3){for(let v=1;v<=9;v++)if(['m','p','s'].every(s=>trip.some(g=>g.tiles[0]===v+s))){addLocal('Sanshoku Doukou',2);break}}
  if(trip.filter(g=>['5z','6z','7z'].includes(g.tiles[0])).length===2&&['5z','6z','7z'].includes(pair))addLocal('Shousangen',2);
-if(all.length===4&&seqs.length===3){let seqNames=seqs.map(s=>s.tiles.join(','));let byNum={};for(let s of seqs){let key=s.tiles.map(t=>t[0]).join('');(byNum[key]??=[]).push(s.tiles[0][1])}if(Object.values(byNum).some(a=>new Set(a).size===3))addLocal('Sanshoku Doujun',closed?2:1)}
+if(all.length===4&&seqs.length>=3){let byNum={};for(let s of seqs){let key=s.tiles.map(t=>t[0]).join('');(byNum[key]??=[]).push(s.tiles[0][1])}if(Object.values(byNum).some(a=>new Set(a).size===3))addLocal('Sanshoku Doujun',closed?2:1)}
 let out={han:localHan,yakuHan:localYaku,fu:rounded,rawFu:fu,names:localNames,fuComponents};if(!best||out.han>best.han||(out.han===best.han&&out.fu>best.fu))best=out}return best}
 function parseIndicators(str){
  if(!str.trim())return [];
