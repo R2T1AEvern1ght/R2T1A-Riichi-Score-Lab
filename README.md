@@ -1,7 +1,7 @@
 # R2T1A Riichi Score Lab
 
-**Version:** v1.0.3  
-**Official Website:** https://R2T1AEvern1ght.github.io/R2T1A-Riichi-Score-Lab/
+**Version:** v1.0.13  
+**Official Website:** https://www.rr2t1ariichiscorelab.com/
 
 ## About
 
@@ -33,7 +33,7 @@
 
 ## How to Use
 
-1. Open the [official website](https://R2T1AEvern1ght.github.io/R2T1A-Riichi-Score-Lab/).
+1. Open the [official website](https://www.rr2t1ariichiscorelab.com/).
 2. Choose **Fast Calculation** or **Regular Calculation**.
 3. Enter the requested hand and round information. In Regular Calculation, follow the numbered steps; Step 0 is optional.
 4. Review the automatically updated scoring results.
@@ -49,3 +49,7 @@ This is an independent, fan-made calculator. Although it supports many common sc
 - **Discord:** @R2T1A95C
 
 **Contact me for any glitches or any incorrect calculations!**
+
+## Note
+
+Reference only. This is an independent, unofficial scoring reference tool.
