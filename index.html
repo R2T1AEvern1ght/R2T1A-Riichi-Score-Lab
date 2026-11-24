@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>R2T1A Riichi Score Lab v1.0.14</title><link rel="canonical" href="https://www.rr2t1ariichiscorelab.com/"><meta name="description" content="R2T1A Riichi Score Lab — free Riichi Mahjong score calculator for Han, Fu, points and yaku in English, Chinese and Japanese."><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>R2T1A Riichi Score Lab v1.0.18</title><link rel="canonical" href="https://www.rr2t1ariichiscorelab.com/"><meta name="description" content="R2T1A Riichi Score Lab — free Riichi Mahjong score calculator for Han, Fu, points and yaku in English, Chinese and Japanese."><style>
 :root{--bg:#091321;--panel:#111f30;--panel2:#16273a;--line:#2b4154;--text:#edf7ff;--muted:#9bb5c9;--accent:#52b9e9;--yellow:#f2ca7e;--good:#7de3b0;--bad:#fa9c98}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 0,#193954 0,transparent 40%),var(--bg);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.shell{max-width:1160px;margin:auto;padding:26px 18px 65px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--accent);font-weight:800}.brand h1{margin:5px 0;font-size:clamp(27px,4vw,42px);letter-spacing:-1.3px}.sub{color:var(--muted);margin:4px 0 0}.lang{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;color:white}.hero{background:linear-gradient(120deg,#173c55,#122335);border:1px solid #355771;border-radius:20px;padding:20px;margin:24px 0;display:flex;justify-content:space-between;gap:16px;align-items:center}.hero p{color:var(--muted);margin:7px 0 0}.tabs{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap}.tab{border-radius:12px;padding:12px 18px;color:var(--muted);border:1px solid var(--line);background:var(--panel)}.tab.active{color:var(--bg);background:var(--accent);font-weight:800}.grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:20px}.panel{background:rgba(17,31,48,.94);border:1px solid var(--line);padding:20px;border-radius:18px;min-width:0}.panel h2{font-size:19px;margin:0 0 6px}.hint{font-size:13px;color:var(--muted);line-height:1.55}.sect{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}.sect h3{font-size:14px;margin:0 0 12px}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field label{color:var(--muted);font-size:12px;font-weight:700}select,input[type=number],input[type=text]{min-width:0;width:100%;background:#0c1a2a;border:1px solid #345066;color:var(--text);border-radius:10px;padding:10px}.option{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:13px}.option input{accent-color:var(--accent)}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.grow{flex:1}.btn{border-radius:10px;padding:10px 14px;background:#1f3d53;border:1px solid #39627c;color:var(--text)}.btn.primary{background:var(--accent);border-color:var(--accent);color:#062032;font-weight:800}.btn.secondary{font-size:12px}.status{border:1px solid #375268;border-radius:12px;background:#0d2031;padding:12px;font-size:13px;line-height:1.5}.status.good{border-color:#37745f;color:var(--good)}.status.bad{border-color:#81555a;color:var(--bad)}.results{position:sticky;top:16px;align-self:start}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:16px 0}.metric{padding:13px 8px;background:#192e42;border-radius:12px;text-align:center}.metric b{display:block;font-size:clamp(18px,2.5vw,25px);font-variant-numeric:tabular-nums}.metric span{display:block;font-size:12px;color:var(--muted);margin-top:3px}.big{font-size:25px;font-weight:900;color:var(--yellow);margin:4px 0 13px}.payrow{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);gap:9px}.payrow strong{font-variant-numeric:tabular-nums}.furow{display:flex;justify-content:space-between;margin:9px 0;color:var(--muted);gap:12px}.furow b{color:var(--text)}.tiles{display:flex;flex-wrap:wrap;gap:5px;min-height:55px;background:#0c1a2a;border:1px dashed #355266;padding:10px;border-radius:12px;align-items:center}.tile{border:1px solid #c5d2d7;background:#f6f6ed;color:#16222c;min-width:32px;height:45px;padding:3px;border-radius:5px;font-weight:900;box-shadow:0 3px 0 #9ba5aa;position:relative;font-size:20px}.tile.red{color:#d64f51}.tile.black{color:#17202b}.tile.white-honor{color:#a2aab2;text-shadow:0 0 1px #222}.tile.disabled-tile{opacity:.32;cursor:not-allowed;box-shadow:none}.tile.blue{color:#2684bf}.tile.green{color:#218967}.tile.selected{outline:3px solid var(--accent);transform:translateY(-3px)}.tile .small{font-size:9px;position:absolute;bottom:2px;right:3px;color:#6a7480}.picker{display:flex;gap:5px;flex-wrap:wrap;margin:10px 0}.picker .tile{min-width:29px;height:41px}.groupCard{background:#0c1a2a;border:1px solid var(--line);border-radius:12px;padding:10px;margin:9px 0}.groupHeader{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}.groupHeader strong{font-size:13px}.groupCard .tiles{min-height:48px;padding:6px}.chip{display:inline-block;font-size:11px;padding:3px 7px;border-radius:9px;background:#28445b;color:#c8d8e8}.hidden{display:none!important}footer{text-align:center;color:var(--muted);margin-top:28px;font-size:13px;line-height:1.85}a{color:#9bdafa}.chiplist{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0}.badge{border:1px solid #376078;background:#143047;padding:7px 10px;border-radius:8px;font-size:12px}.info{border-left:3px solid var(--yellow);padding-left:10px}.separator{height:1px;background:var(--line);margin:15px 0}@media(max-width:830px){.grid{grid-template-columns:1fr}.results{position:static}.hero{align-items:flex-start;flex-direction:column}}@media(max-width:480px){.fields{grid-template-columns:1fr}.shell{padding:16px 12px}.panel{padding:14px}.top{flex-wrap:wrap}.tile{min-width:29px}}
 
 /* v0.8: subtle, accessible interaction motion; styling and calculations unchanged */
@@ -240,16 +240,33 @@ footer strong{color:#f0d1a2}
 .scan-review-item canvas{display:block;width:100%;max-height:95px;object-fit:contain;margin-bottom:5px}.scan-review-item select{width:100%;font-size:12px;padding:6px 1px}
 .scan-panel .row{gap:8px;flex-wrap:wrap}.scan-panel .hint{line-height:1.5}
 
-/* v1.0.17 interactive image crop and magnification */
-.scan-viewport{position:relative;max-width:100%;margin:12px auto;user-select:none;touch-action:none;overflow:hidden;border-radius:9px;border:1px solid #62778c;background:#0d1b2a;line-height:0}
+/* v1.0.18 visible crop selection, zoomable photo and exact crop preview */
+.scan-panel{max-width:1040px;max-height:94vh;overscroll-behavior:contain}
+.scan-viewer-toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.scan-viewport{position:relative;width:100%;max-width:100%;margin:12px auto;user-select:none;touch-action:none;overflow:hidden;border-radius:10px;border:2px solid #7795b5;background:#0d1b2a;line-height:0;cursor:grab}
+.scan-viewport:active{cursor:grabbing}
 .scan-viewport canvas{display:block;width:100%;height:auto;pointer-events:none}
-.scan-crop-box{position:absolute;border:2px solid #f4ca70;box-shadow:0 0 0 9999px rgba(0,0,0,.36),inset 0 0 0 1px #141b28;cursor:move;touch-action:none;box-sizing:border-box}
-.scan-crop-box::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 33%,rgba(255,255,255,.32) 33.3%,transparent 33.6%,transparent 66%,rgba(255,255,255,.32) 66.3%,transparent 66.6%),linear-gradient(0deg,transparent 33%,rgba(255,255,255,.32) 33.3%,transparent 33.6%,transparent 66%,rgba(255,255,255,.32) 66.3%,transparent 66.6%)}
-.scan-handle{position:absolute;width:22px;height:22px;border-radius:6px;background:#f4ca70;border:2px solid #172b3e;touch-action:none;z-index:2}
-.scan-handle.nw{top:-12px;left:-12px;cursor:nwse-resize}.scan-handle.ne{top:-12px;right:-12px;cursor:nesw-resize}.scan-handle.sw{bottom:-12px;left:-12px;cursor:nesw-resize}.scan-handle.se{bottom:-12px;right:-12px;cursor:nwse-resize}
-.scan-zoom-line{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:8px 0}.scan-zoom-line input{flex:1;min-width:130px}.scan-zoom-line button{min-width:38px}
+.scan-crop-box{position:absolute;border:3px solid #f8d77b;box-shadow:0 0 0 9999px rgba(2,12,21,.60),0 0 14px rgba(255,221,137,.78),inset 0 0 0 1px #172b3e;cursor:move;touch-action:none;box-sizing:border-box;min-width:24px;min-height:24px;z-index:3}
+.scan-crop-box::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 33%,rgba(255,255,255,.3) 33.3%,transparent 33.6%,transparent 66%,rgba(255,255,255,.3) 66.3%,transparent 66.6%),linear-gradient(0deg,transparent 33%,rgba(255,255,255,.3) 33.3%,transparent 33.6%,transparent 66%,rgba(255,255,255,.3) 66.3%,transparent 66.6%)}
+.scan-crop-label{position:absolute;top:0;left:0;white-space:nowrap;background:#f4ce78;color:#162233;font-weight:800;font-size:12px;padding:7px 10px;border-radius:0 0 8px 0;line-height:1;pointer-events:none;z-index:2}
+.scan-handle{position:absolute;width:28px;height:28px;border-radius:7px;background:#f4ce78;border:3px solid #183145;touch-action:none;z-index:4}
+.scan-handle.nw{top:-15px;left:-15px;cursor:nwse-resize}.scan-handle.ne{top:-15px;right:-15px;cursor:nesw-resize}.scan-handle.sw{bottom:-15px;left:-15px;cursor:nesw-resize}.scan-handle.se{bottom:-15px;right:-15px;cursor:nwse-resize}
+.scan-handle.n{top:-15px;left:calc(50% - 14px);cursor:ns-resize}.scan-handle.s{bottom:-15px;left:calc(50% - 14px);cursor:ns-resize}.scan-handle.w{left:-15px;top:calc(50% - 14px);cursor:ew-resize}.scan-handle.e{right:-15px;top:calc(50% - 14px);cursor:ew-resize}
+.scan-zoom-line{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:8px 0}
+.scan-zoom-line input{flex:1;min-width:150px;accent-color:#8cbfff}.scan-zoom-line button{min-width:44px}
 .scan-camera-video{display:block;width:100%;max-height:55vh;object-fit:contain;border-radius:10px;background:#030a10;transform-origin:center}
-</style></head><body><main class="shell"><div class="top"><div class="brand"><div class="eyebrow">R2T1A • MAHJONG TOOLS</div><h1 id="heading">R2T1A RIICHI SCORE LAB <span class="reference-note">(Reference only)</span></h1><p class="sub" data-i="subtitle">Hand builder · Fu · Han · Point settlement</p></div><select id="language" class="lang" aria-label="Language"><option value="en">English</option><option value="zh">简体中文</option><option value="ja">日本語</option></select><div class="design-switch" role="group" aria-labelledby="designModeLabel"><label id="designModeLabel">Design</label><div class="design-buttons"><button type="button" class="design-button" data-design-choice="original" aria-pressed="true">Original</button><button type="button" class="design-button" data-design-choice="minimal" aria-pressed="false">Minimal</button><button type="button" class="design-button" data-design-choice="premium" aria-pressed="false">Premium</button></div></div></div><div class="hero"><div><b data-i="preview">RIICHI MAHJONG SCORE CALCULATOR</b><p data-i="previewText">Calculate Fu, Han and Points with quick scoring or a complete tile-based hand builder. Supports English, Chinese and Japanese.</p></div><span class="chip">v1.0.17</span></div><nav class="tabs"><button id="regularTab" class="tab active" onclick="switchTab('regular')">🀄 Regular Calculation</button><button id="fastTab" class="tab" onclick="switchTab('fast')">⚡ Fast Calculation</button></nav><div class="grid"><section class="panel"><div id="fastPage" class="hidden"><h2 data-i="fastTitle">Fast Calculation</h2><p class="hint" data-i="fastHelp">Enter Fu and Han directly, or use the meld-based Fu builder below.</p><div class="fields"><div class="field"><label data-i="han">Han (翻)</label><input id="fHan" type="number" min="0" max="30" value="2"></div><div class="field"><label data-i="fuMode">Fu calculation</label><select id="fFuMode"><option value="manual">Manual Fu</option><option value="builder">Meld builder</option></select></div></div><div id="manualFu" class="sect"><div class="field"><label data-i="fu">Fu (符)</label><select id="fFu"><option value="20">20</option><option value="25">25</option><option value="30" selected>30</option><option value="40">40</option><option value="50">50</option><option value="60">60</option><option value="70">70</option><option value="80">80</option><option value="90">90</option><option value="100">100</option><option value="110">110</option><option value="120">120</option></select></div></div><div id="builderFu" class="hidden"><div class="sect"><div class="field" style="margin-bottom:12px"><label>Hand openness</label><select id="fClosed"><option value="closed">Closed / 门前 / 門前</option><option value="open">Open / 副露 / 鳴き</option></select></div><h3 data-i="meldBuilder">Fu meld builder</h3><label class="option"><input id="fChi" type="checkbox"><span data-i="sevenPairs">Seven pairs (25 Fu)</span></label><div id="fBuilderBody"><div id="fMelds"></div><div class="fields"><div class="field"><label data-i="pair">Pair</label><select id="fPair"></select></div><div class="field"><label data-i="wait">Wait</label><select id="fWait"></select></div></div></div></div></div></div><div id="regularPage"><h2 data-i="regularTitle">Regular Calculation</h2><p class="hint" data-i="regularHelp">Add 13 tiles to your concealed area, plus any called melds. Then choose the winning tile. Each regular hand must contain four melds and one pair.</p><p class="step-order-notice" data-i="stepOrderNotice">⚠ Please complete the steps in order (0 → 4) for accurate calculation.</p><div class="sect"><h3>0 · <span data-i="openArea">Open Area / Melds</span> <span class="optional-meld-badge" id="optionalMeldBadge">Optional</span></h3><p class="hint" data-i="openHelp">Add 3 or 4 tiles to each meld group. The calculator auto-detects Chi, Pon, Open Kan, or Closed Kan.</p><div id="openMelds"></div><button class="btn secondary" onclick="addMeld()" id="addMeldBtn" data-i="addMeld">+ Add called meld</button></div><div class="sect" id="concealedStep"><div class="scan-entry" id="scanEntry"><button type="button" class="btn primary" onclick="requestTileScan()" id="scanHandBtn">📷 Scan Hand / 拍照识牌</button><span class="hint" id="scanHint">Camera or image upload · Review tiles before importing.</span><input type="file" id="scanCameraInput" accept="image/*" capture="environment" hidden onchange="handleBrowserTilePhoto(this)"><input type="file" id="scanUploadInput" accept="image/*" hidden onchange="handleBrowserTilePhoto(this)"></div><h3 class="concealed-target" onclick="selectConcealedArea()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectConcealedArea()}">1 · <span data-i="closedArea">Closed Area / Concealed Tiles</span> <span id="closedCount" class="chip">0 tiles</span></h3><div class="tiles" id="concealedTiles" onclick="if(event.target===this || event.target.closest('.hint'))selectConcealedArea()" title="Click to add tiles"></div><div class="row" style="margin-top:8px"><button class="btn secondary" id="undoConcealed" onclick="undoConcealed()" data-i="undo">Undo last</button><button class="btn secondary" onclick="clearConcealed()" data-i="clearArea">Clear area</button></div></div><div class="sect"><h3>2 · <span data-i="tilePicker">Tile selector</span></h3><div class="row"><span class="chip" data-i="tapHint">Tap tiles to add</span><span id="pickerTarget" class="chip"></span><button type="button" id="tileAppearanceToggle" class="btn secondary" onclick="toggleTileAppearance()" aria-pressed="true">▣ Classic Tiles</button><span class="tile-switch-hint" data-i="switchTilesHint">Click to switch tile styles</span></div><div id="tilePicker"></div></div><div class="sect"><h3>3 · <span data-i="winInfo">Winning tile & declarations</span></h3><div class="fields"><div class="field"><label data-i="winningTile">Winning tile (in closed area)</label><select id="winningTile"></select></div><div class="field"><label data-i="riichi">Riichi</label><select id="riichi"><option value="no">No riichi</option><option value="yes">Riichi</option><option value="double">Double riichi</option></select></div><div class="field"><label data-i="seatWind">Seat wind</label><select id="seatWind"></select></div><div class="field"><label data-i="roundWind">Round wind</label><select id="roundWind"></select></div><div class="field indicator-field"><label data-i="doraIndicators">Dora indicators (e.g. 4m 1z)</label><input id="dora" type="hidden" value=""><div class="indicator-target" id="doraTarget" role="button" tabindex="0" onclick="if(event.target===this||event.target.closest('.indicator-pick-label'))selectIndicatorArea('dora')" onkeydown="if(event.key==='Enter'){selectIndicatorArea('dora')}"><span id="doraPreview" class="indicator-preview"></span><span class="indicator-pick-label" id="doraPickLabel">＋ Select from tile picker</span></div><div class="hint" id="doraCountText">0 / 5</div></div><div class="field indicator-field"><label data-i="uraIndicators">Ura-dora indicators</label><input id="ura" type="hidden" value=""><div class="indicator-target" id="uraTarget" role="button" tabindex="0" onclick="if(event.target===this||event.target.closest('.indicator-pick-label'))selectIndicatorArea('ura')" onkeydown="if(event.key==='Enter'){selectIndicatorArea('ura')}"><span id="uraPreview" class="indicator-preview"></span><span class="indicator-pick-label" id="uraPickLabel">＋ Select from tile picker</span></div><div class="hint" id="uraCountText">0 / 5</div></div><div class="field"><label data-i="redDora">Red fives in hand</label><input id="red" type="number" min="0" max="3" value="0"></div><div class="field"><label data-i="extraHan">Other Yaku Han (advanced)</label><input id="extra" type="number" min="0" max="30" value="0"></div></div><div class="row" style="margin-top:12px"><label class="option"><input id="ippatsu" type="checkbox">Ippatsu (一発)</label><label class="option"><input id="rinshan" type="checkbox">Rinshan (嶺上)</label><label class="option"><input id="haitei" type="checkbox">Haitei / Houtei</label></div><p class="hint info" data-i="regularLimit">Prototype: supports standard hands and seven pairs. Several rare yaku and special circumstances require manual verification.</p></div></div><div class="sect"><h3>4 · <span data-i="settlement">Settlement settings</span></h3><div class="fields"><div class="field"><label data-i="dealer">Winner</label><select id="dealer"><option value="child">Non-dealer</option><option value="dealer">Dealer</option></select></div><div class="field"><label data-i="winMethod">Winning method</label><select id="method"><option value="ron">Ron</option><option value="tsumo">Tsumo</option></select></div><div class="field"><label data-i="honba">Honba counters</label><input id="honba" type="number" min="0" max="99" value="0"></div><div class="field"><label data-i="sticks">Riichi sticks on table</label><input id="sticks" type="number" min="0" max="99" value="0"></div></div><label class="option" style="margin-top:12px"><input id="kiriage" type="checkbox"><span data-i="kiriage">Kiriage Mangan optional rule</span></label></div><div class="sect"><div class="row"><button class="btn" onclick="resetAll()" data-i="reset">↺ Reset all</button></div></div></section><aside class="panel results"><h2 data-i="scoreResult">Score Result</h2><p class="hint" data-i="instant">Updates automatically when inputs change.</p><div id="status" class="status">Ready.</div><div class="metrics"><div class="metric"><b id="metricHan">2</b><span data-i="han">Han</span></div><div class="metric"><b id="metricFu">30</b><span data-i="fu">Fu</span></div><div class="metric"><b id="metricPoints">2,000</b><span data-i="points">Points</span></div></div><div class="big" id="limitLabel">2 Han · 30 Fu</div><h3 data-i="payments">Who pays?</h3><div id="paymentRows"></div><div class="separator"></div><div id="breakdownFrame" class="breakdown-frame"><h3 data-i="breakdown">Calculation breakdown</h3><div id="breakdown"></div></div><p class="hint" id="bonusMessage"></p></aside></div><footer><strong>Credits</strong><div>YouTube: @R2T1A95C_Evernight</div><div>Bilibili: @レム-N01RR3M</div><div>Discord: @R2T1A95C</div><div>Contact me for any glitches or any incorrect calculations!</div><div class="site-url"><a href="https://www.rr2t1ariichiscorelab.com/" target="_blank" rel="noopener noreferrer">https://www.rr2t1ariichiscorelab.com/</a></div></footer></main>
+.scan-live-crop{background:#091a29;border:1px solid #486982;border-radius:11px;padding:10px;margin:12px 0}
+.scan-live-crop canvas{display:block;max-width:100%;width:auto;height:auto;max-height:180px;margin:8px auto;background:#0b1622;image-rendering:auto}
+.scan-tip{font-size:12px;color:#c5e3fa;line-height:1.5}
+.scan-review-item{position:relative}.scan-review-item canvas{cursor:zoom-in;max-height:130px;object-fit:contain}
+.scan-review-item select.scan-unknown{border:1px solid #edbe68;color:#ffe4a5}
+.scan-review-item .scan-tile-title{display:block;font-size:12px;margin:5px 0;color:#d2e5f8}
+.scan-review-item .scan-tile-quality{display:block;font-size:11px;color:#edc988;margin-top:3px}
+.scan-review-warning{border:1px solid #c19b55;border-radius:8px;padding:10px;background:rgba(161,111,40,.14);margin:12px 0;font-size:13px}
+.scan-img-lightbox{position:fixed;inset:0;background:rgba(0,0,0,.90);z-index:2200;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:18px}
+.scan-img-lightbox canvas{max-width:95vw;max-height:75vh;object-fit:contain;image-rendering:pixelated;background:#fff;border-radius:8px}
+@media(max-width:600px){.scan-panel{padding:12px}.scan-handle{width:25px;height:25px}.scan-viewport{margin:14px auto}}
+</style></head><body><main class="shell"><div class="top"><div class="brand"><div class="eyebrow">R2T1A • MAHJONG TOOLS</div><h1 id="heading">R2T1A RIICHI SCORE LAB <span class="reference-note">(Reference only)</span></h1><p class="sub" data-i="subtitle">Hand builder · Fu · Han · Point settlement</p></div><select id="language" class="lang" aria-label="Language"><option value="en">English</option><option value="zh">简体中文</option><option value="ja">日本語</option></select><div class="design-switch" role="group" aria-labelledby="designModeLabel"><label id="designModeLabel">Design</label><div class="design-buttons"><button type="button" class="design-button" data-design-choice="original" aria-pressed="true">Original</button><button type="button" class="design-button" data-design-choice="minimal" aria-pressed="false">Minimal</button><button type="button" class="design-button" data-design-choice="premium" aria-pressed="false">Premium</button></div></div></div><div class="hero"><div><b data-i="preview">RIICHI MAHJONG SCORE CALCULATOR</b><p data-i="previewText">Calculate Fu, Han and Points with quick scoring or a complete tile-based hand builder. Supports English, Chinese and Japanese.</p></div><span class="chip">v1.0.18</span></div><nav class="tabs"><button id="regularTab" class="tab active" onclick="switchTab('regular')">🀄 Regular Calculation</button><button id="fastTab" class="tab" onclick="switchTab('fast')">⚡ Fast Calculation</button></nav><div class="grid"><section class="panel"><div id="fastPage" class="hidden"><h2 data-i="fastTitle">Fast Calculation</h2><p class="hint" data-i="fastHelp">Enter Fu and Han directly, or use the meld-based Fu builder below.</p><div class="fields"><div class="field"><label data-i="han">Han (翻)</label><input id="fHan" type="number" min="0" max="30" value="2"></div><div class="field"><label data-i="fuMode">Fu calculation</label><select id="fFuMode"><option value="manual">Manual Fu</option><option value="builder">Meld builder</option></select></div></div><div id="manualFu" class="sect"><div class="field"><label data-i="fu">Fu (符)</label><select id="fFu"><option value="20">20</option><option value="25">25</option><option value="30" selected>30</option><option value="40">40</option><option value="50">50</option><option value="60">60</option><option value="70">70</option><option value="80">80</option><option value="90">90</option><option value="100">100</option><option value="110">110</option><option value="120">120</option></select></div></div><div id="builderFu" class="hidden"><div class="sect"><div class="field" style="margin-bottom:12px"><label>Hand openness</label><select id="fClosed"><option value="closed">Closed / 门前 / 門前</option><option value="open">Open / 副露 / 鳴き</option></select></div><h3 data-i="meldBuilder">Fu meld builder</h3><label class="option"><input id="fChi" type="checkbox"><span data-i="sevenPairs">Seven pairs (25 Fu)</span></label><div id="fBuilderBody"><div id="fMelds"></div><div class="fields"><div class="field"><label data-i="pair">Pair</label><select id="fPair"></select></div><div class="field"><label data-i="wait">Wait</label><select id="fWait"></select></div></div></div></div></div></div><div id="regularPage"><h2 data-i="regularTitle">Regular Calculation</h2><p class="hint" data-i="regularHelp">Add 13 tiles to your concealed area, plus any called melds. Then choose the winning tile. Each regular hand must contain four melds and one pair.</p><p class="step-order-notice" data-i="stepOrderNotice">⚠ Please complete the steps in order (0 → 4) for accurate calculation.</p><div class="sect"><h3>0 · <span data-i="openArea">Open Area / Melds</span> <span class="optional-meld-badge" id="optionalMeldBadge">Optional</span></h3><p class="hint" data-i="openHelp">Add 3 or 4 tiles to each meld group. The calculator auto-detects Chi, Pon, Open Kan, or Closed Kan.</p><div id="openMelds"></div><button class="btn secondary" onclick="addMeld()" id="addMeldBtn" data-i="addMeld">+ Add called meld</button></div><div class="sect" id="concealedStep"><div class="scan-entry" id="scanEntry"><button type="button" class="btn primary" onclick="requestTileScan()" id="scanHandBtn">📷 Scan Hand / 拍照识牌</button><span class="hint" id="scanHint">Camera or image upload · Review tiles before importing.</span><input type="file" id="scanCameraInput" accept="image/*" capture="environment" hidden onchange="handleBrowserTilePhoto(this)"><input type="file" id="scanUploadInput" accept="image/*" hidden onchange="handleBrowserTilePhoto(this)"></div><h3 class="concealed-target" onclick="selectConcealedArea()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectConcealedArea()}">1 · <span data-i="closedArea">Closed Area / Concealed Tiles</span> <span id="closedCount" class="chip">0 tiles</span></h3><div class="tiles" id="concealedTiles" onclick="if(event.target===this || event.target.closest('.hint'))selectConcealedArea()" title="Click to add tiles"></div><div class="row" style="margin-top:8px"><button class="btn secondary" id="undoConcealed" onclick="undoConcealed()" data-i="undo">Undo last</button><button class="btn secondary" onclick="clearConcealed()" data-i="clearArea">Clear area</button></div></div><div class="sect"><h3>2 · <span data-i="tilePicker">Tile selector</span></h3><div class="row"><span class="chip" data-i="tapHint">Tap tiles to add</span><span id="pickerTarget" class="chip"></span><button type="button" id="tileAppearanceToggle" class="btn secondary" onclick="toggleTileAppearance()" aria-pressed="true">▣ Classic Tiles</button><span class="tile-switch-hint" data-i="switchTilesHint">Click to switch tile styles</span></div><div id="tilePicker"></div></div><div class="sect"><h3>3 · <span data-i="winInfo">Winning tile & declarations</span></h3><div class="fields"><div class="field"><label data-i="winningTile">Winning tile (in closed area)</label><select id="winningTile"></select></div><div class="field"><label data-i="riichi">Riichi</label><select id="riichi"><option value="no">No riichi</option><option value="yes">Riichi</option><option value="double">Double riichi</option></select></div><div class="field"><label data-i="seatWind">Seat wind</label><select id="seatWind"></select></div><div class="field"><label data-i="roundWind">Round wind</label><select id="roundWind"></select></div><div class="field indicator-field"><label data-i="doraIndicators">Dora indicators (e.g. 4m 1z)</label><input id="dora" type="hidden" value=""><div class="indicator-target" id="doraTarget" role="button" tabindex="0" onclick="if(event.target===this||event.target.closest('.indicator-pick-label'))selectIndicatorArea('dora')" onkeydown="if(event.key==='Enter'){selectIndicatorArea('dora')}"><span id="doraPreview" class="indicator-preview"></span><span class="indicator-pick-label" id="doraPickLabel">＋ Select from tile picker</span></div><div class="hint" id="doraCountText">0 / 5</div></div><div class="field indicator-field"><label data-i="uraIndicators">Ura-dora indicators</label><input id="ura" type="hidden" value=""><div class="indicator-target" id="uraTarget" role="button" tabindex="0" onclick="if(event.target===this||event.target.closest('.indicator-pick-label'))selectIndicatorArea('ura')" onkeydown="if(event.key==='Enter'){selectIndicatorArea('ura')}"><span id="uraPreview" class="indicator-preview"></span><span class="indicator-pick-label" id="uraPickLabel">＋ Select from tile picker</span></div><div class="hint" id="uraCountText">0 / 5</div></div><div class="field"><label data-i="redDora">Red fives in hand</label><input id="red" type="number" min="0" max="3" value="0"></div><div class="field"><label data-i="extraHan">Other Yaku Han (advanced)</label><input id="extra" type="number" min="0" max="30" value="0"></div></div><div class="row" style="margin-top:12px"><label class="option"><input id="ippatsu" type="checkbox">Ippatsu (一発)</label><label class="option"><input id="rinshan" type="checkbox">Rinshan (嶺上)</label><label class="option"><input id="haitei" type="checkbox">Haitei / Houtei</label></div><p class="hint info" data-i="regularLimit">Prototype: supports standard hands and seven pairs. Several rare yaku and special circumstances require manual verification.</p></div></div><div class="sect"><h3>4 · <span data-i="settlement">Settlement settings</span></h3><div class="fields"><div class="field"><label data-i="dealer">Winner</label><select id="dealer"><option value="child">Non-dealer</option><option value="dealer">Dealer</option></select></div><div class="field"><label data-i="winMethod">Winning method</label><select id="method"><option value="ron">Ron</option><option value="tsumo">Tsumo</option></select></div><div class="field"><label data-i="honba">Honba counters</label><input id="honba" type="number" min="0" max="99" value="0"></div><div class="field"><label data-i="sticks">Riichi sticks on table</label><input id="sticks" type="number" min="0" max="99" value="0"></div></div><label class="option" style="margin-top:12px"><input id="kiriage" type="checkbox"><span data-i="kiriage">Kiriage Mangan optional rule</span></label></div><div class="sect"><div class="row"><button class="btn" onclick="resetAll()" data-i="reset">↺ Reset all</button></div></div></section><aside class="panel results"><h2 data-i="scoreResult">Score Result</h2><p class="hint" data-i="instant">Updates automatically when inputs change.</p><div id="status" class="status">Ready.</div><div class="metrics"><div class="metric"><b id="metricHan">2</b><span data-i="han">Han</span></div><div class="metric"><b id="metricFu">30</b><span data-i="fu">Fu</span></div><div class="metric"><b id="metricPoints">2,000</b><span data-i="points">Points</span></div></div><div class="big" id="limitLabel">2 Han · 30 Fu</div><h3 data-i="payments">Who pays?</h3><div id="paymentRows"></div><div class="separator"></div><div id="breakdownFrame" class="breakdown-frame"><h3 data-i="breakdown">Calculation breakdown</h3><div id="breakdown"></div></div><p class="hint" id="bonusMessage"></p></aside></div><footer><strong>Credits</strong><div>YouTube: @R2T1A95C_Evernight</div><div>Bilibili: @レム-N01RR3M</div><div>Discord: @R2T1A95C</div><div>Contact me for any glitches or any incorrect calculations!</div><div class="site-url"><a href="https://www.rr2t1ariichiscorelab.com/" target="_blank" rel="noopener noreferrer">https://www.rr2t1ariichiscorelab.com/</a></div></footer></main>
 <script>
 const T={en:{subtitle:'Hand builder · Fu · Han · Point settlement',preview:'RIICHI MAHJONG SCORE CALCULATOR',previewText:'Calculate Fu, Han and Points with quick scoring or a complete tile-based hand builder. Supports English, Chinese and Japanese.',fastTitle:'Fast Calculation',fastHelp:'Enter Fu and Han directly, or use the meld-based Fu builder below.',regularTitle:'Regular Calculation',regularHelp:'Put tiles into the concealed area and called melds. Choose the winning tile and game settings to score.',stepOrderNotice:'⚠ Please complete the steps in order (0 → 4) for accurate calculation.',han:'Han (翻)',fu:'Fu (符)',fuMode:'Fu calculation',meldBuilder:'Fu meld builder',sevenPairs:'Seven pairs (25 Fu)',pair:'Pair',wait:'Wait',closedArea:'Closed Area / Concealed Tiles',openArea:'Open Area / Melds',openHelp:'Add Chi, Pon, Kan or concealed Kan here.',undo:'Undo last',clearArea:'Clear area',addMeld:'+ Add meld',tilePicker:'Tile selector',tapHint:'Tap tiles to add',switchTilesHint:'Click to switch tile styles',winInfo:'Winning tile & declarations',winningTile:'Winning tile (in closed area)',riichi:'Riichi',seatWind:'Seat wind',roundWind:'Round wind',doraIndicators:'Dora indicators (e.g. 4m 1z)',uraIndicators:'Ura-dora indicators',redDora:'Red fives in hand',extraHan:'Other Yaku Han (advanced)',regularLimit:'Preview supports common yaku and standard hands / seven pairs. Rare yakuman and special yaku should be verified manually.',settlement:'Settlement settings',dealer:'Winner',winMethod:'Winning method',honba:'Honba counters',sticks:'Riichi sticks on table',kiriage:'Kiriage Mangan optional rule',calculate:'Calculate score',reset:'↺ Reset all',scoreResult:'Score Result',instant:'Updates automatically when inputs change.',points:'Points',payments:'Who pays?',breakdown:'Calculation breakdown'},zh:{subtitle:'牌型搭建 · 符数 · 翻数 · 点数结算',preview:'日式麻将计分计算器',previewText:'支持快速计算与完整手牌计算，自动统计翻数、符数、点数及各家支付金额，并可切换英文、中文和日文。',fastTitle:'快速计算',fastHelp:'直接输入符数和翻数，也可以使用面子符数计算器。',regularTitle:'普通计算',regularHelp:'将牌添加到门前区、副露区，并选择和牌张以及场况。',stepOrderNotice:'⚠ 请务必按照步骤顺序（0 → 4）填写，以确保计算准确。',han:'翻数',fu:'符数',fuMode:'符数计算方式',meldBuilder:'面子符数计算',sevenPairs:'七对子（固定25符）',pair:'雀头',wait:'听牌形式',closedArea:'门前区 / 手牌',openArea:'副露区 / 面子',openHelp:'每个副露组加入3或4张牌，系统会自动识别为吃、碰、明杠或暗杠。',undo:'撤销最后一张',clearArea:'清空区域',addMeld:'+ 添加面子',tilePicker:'选牌区域',tapHint:'点击牌加入',switchTilesHint:'点击按钮可切换牌面样式',winInfo:'和牌张及宣言',winningTile:'和牌张（在门前区中）',riichi:'立直',seatWind:'自风',roundWind:'场风',doraIndicators:'宝牌指示牌（如 4m 1z）',uraIndicators:'里宝牌指示牌',redDora:'手中赤五数量',extraHan:'其他役翻（高级）',regularLimit:'原型支持常见役、标准型与七对子。稀有役满和特殊役请自行核对。',settlement:'结算设置',dealer:'和牌者身份',winMethod:'和牌方式',honba:'本场数',sticks:'立直供托棒数',kiriage:'切上满贯（可选规则）',calculate:'计算点数',reset:'↺ 全部重置',scoreResult:'结算结果',instant:'修改输入后自动更新。',points:'点数',payments:'各家支付',breakdown:'计算明细'},ja:{subtitle:'手牌作成 · 符 · 翻 · 点数精算',preview:'リーチ麻雀点数計算ツール',previewText:'簡易計算と牌入力による通常計算に対応。翻・符・点数と各プレイヤーの支払いを計算し、英語・中国語・日本語に切り替えられます。',fastTitle:'高速計算',fastHelp:'符と翻を直接入力、または面子から符を計算できます。',regularTitle:'通常計算',regularHelp:'門前牌、副露面子、和了牌と場況を入力してください。',stepOrderNotice:'⚠ 正確に計算するため、必ず手順（0 → 4）に沿って入力してください。',han:'翻',fu:'符',fuMode:'符計算方法',meldBuilder:'面子から符計算',sevenPairs:'七対子（25符固定）',pair:'雀頭',wait:'待ち',closedArea:'門前牌 / 手牌',openArea:'副露面子',openHelp:'各面子に3枚または4枚の牌を追加すると、チー・ポン・明槓・暗槓を自動判定します。',undo:'一枚戻す',clearArea:'消去',addMeld:'+ 面子追加',tilePicker:'牌選択',tapHint:'牌をタップして追加',switchTilesHint:'ボタンを押すと牌の表示を切り替えられます',winInfo:'和了牌と宣言',winningTile:'和了牌（門前牌）',riichi:'立直',seatWind:'自風',roundWind:'場風',doraIndicators:'ドラ表示牌（例: 4m 1z）',uraIndicators:'裏ドラ表示牌',redDora:'赤ドラ枚数',extraHan:'その他の役翻（上級）',regularLimit:'試作版は一般的な役と基本形・七対子に対応。珍しい役満や特殊役は別途ご確認ください。',settlement:'精算設定',dealer:'和了者',winMethod:'和了方法',honba:'本場',sticks:'供託リーチ棒',kiriage:'切り上げ満貫',calculate:'点数計算',reset:'↺ 全リセット',scoreResult:'計算結果',instant:'入力に応じて自動更新します。',points:'点数',payments:'支払い',breakdown:'内訳'}};
 const meldTypes=[['seq','Sequence / 顺子 / 順子',0],['os','Open triplet 2–8',2],['cs','Closed triplet 2–8',4],['ot','Open triplet 1/9/honor',4],['ct','Closed triplet 1/9/honor',8],['oks','Open kan 2–8',8],['cks','Closed kan 2–8',16],['okt','Open kan 1/9/honor',16],['ckt','Closed kan 1/9/honor',32]];
@@ -664,18 +681,127 @@ requestTileScan=function(){
  if(window.webkit?.messageHandlers?.tileScan){window.webkit.messageHandlers.tileScan.postMessage({source:'regular'});return;}
  showScanChoice();
 };
-let browserScanImage=null,browserScanRows=[],scanZoom=1,scanCrop={x:.03,y:.20,w:.94,h:.65};
-let scanPinchStart=null;
+let browserScanImage=null,browserScanRows=[],scanZoom=1,scanCrop={x:.08,y:.35,w:.84,h:.32};
+let scanPan={x:0,y:0},scanPinchStart=null;
+function scanClamp(v,a,b){return Math.max(a,Math.min(b,v));}
+function scanSourceRect(){
+ const src=browserScanImage,z=scanZoom,sw=src.width/z,sh=src.height/z;
+ return {x:(src.width-sw)*(.5+scanPan.x*.5),y:(src.height-sh)*(.5+scanPan.y*.5),w:sw,h:sh};
+}
+function drawScanPreview(){
+ const canvas=$('scanPhotoCanvas');if(!canvas||!browserScanImage)return;
+ const src=browserScanImage,r=scanSourceRect();canvas.width=src.width;canvas.height=src.height;
+ const ctx=canvas.getContext('2d',{willReadFrequently:true});
+ ctx.clearRect(0,0,canvas.width,canvas.height);
+ ctx.drawImage(src,r.x,r.y,r.w,r.h,0,0,canvas.width,canvas.height);
+ const box=$('scanCropBox');if(box){box.style.left=(scanCrop.x*100)+'%';box.style.top=(scanCrop.y*100)+'%';box.style.width=(scanCrop.w*100)+'%';box.style.height=(scanCrop.h*100)+'%';}
+ if($('scanZoomValue'))$('scanZoomValue').textContent=scanZoom.toFixed(1)+'×';
+ updateScanCropPreview();
+}
+function updateScanCropPreview(){
+ const src=$('scanPhotoCanvas'),out=$('scanCropLiveCanvas');if(!src||!out||!src.width)return;
+ const sx=scanCrop.x*src.width,sy=scanCrop.y*src.height,sw=scanCrop.w*src.width,sh=scanCrop.h*src.height;
+ const scale=Math.min(1,950/Math.max(sw,sh));out.width=Math.max(2,Math.round(sw*scale));out.height=Math.max(2,Math.round(sh*scale));
+ out.getContext('2d',{willReadFrequently:true}).drawImage(src,sx,sy,sw,sh,0,0,out.width,out.height);
+}
+function setScanZoom(v){
+ scanZoom=scanClamp(Math.round(v*10)/10,1,6);
+ if(scanZoom===1)scanPan={x:0,y:0};
+ if($('scanZoomRange'))$('scanZoomRange').value=String(scanZoom);
+ drawScanPreview();
+}
+function scanFindRow(){
+ // Search locally for the bright tile faces. Always allow the user to correct the suggestion.
+ const src=browserScanImage;if(!src)return null;
+ const k=Math.min(1,520/src.width,400/src.height),w=Math.max(1,Math.round(src.width*k)),h=Math.max(1,Math.round(src.height*k));
+ const tmp=document.createElement('canvas');tmp.width=w;tmp.height=h;
+ const context=tmp.getContext('2d',{willReadFrequently:true});context.drawImage(src,0,0,w,h);
+ const p=context.getImageData(0,0,w,h).data,white=new Uint8Array(w*h),rows=new Float32Array(h);
+ for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+  const i=(y*w+x)*4,r=p[i],g=p[i+1],b=p[i+2],hi=Math.max(r,g,b),lo=Math.min(r,g,b);
+  if((r+g+b)/3>153 && hi-lo<88 && lo>112){white[y*w+x]=1;rows[y]++;}
+ }
+ const radius=Math.max(2,Math.round(h*.009));const smoothed=new Float32Array(h);
+ for(let y=0;y<h;y++){let sum=0;for(let t=Math.max(0,y-radius);t<=Math.min(h-1,y+radius);t++)sum+=rows[t];smoothed[y]=sum/(2*radius+1);}
+ const max=Math.max(...smoothed);if(max<w*.09)return null;
+ const th=Math.max(w*.055,max*.28),bands=[];let lo=-1;
+ for(let y=0;y<=h;y++){
+  if(y<h&&smoothed[y]>=th){if(lo<0)lo=y;}
+  else if(lo>=0){const hi=y;let sum=0;for(let j=lo;j<hi;j++)sum+=smoothed[j];if(hi-lo>=h*.018)bands.push({lo,hi,sum});lo=-1;}
+ }
+ if(!bands.length)return null;
+ // Tile faces are usually more substantial than thin white background highlights.
+ bands.sort((a,b)=>b.sum-a.sum);
+ const band=bands[0],Y0=Math.max(0,band.lo-3),Y1=Math.min(h,band.hi+3),cols=new Float32Array(w);
+ for(let x=0;x<w;x++)for(let y=Y0;y<Y1;y++)cols[x]+=white[y*w+x];
+ const maxc=Math.max(...cols),xx=[];
+ for(let x=0;x<w;x++)if(cols[x]>=Math.max((Y1-Y0)*.16,maxc*.28))xx.push(x);
+ if(xx.length<Math.max(12,w*.1))return null;
+ const left=xx[0],right=xx[xx.length-1];
+ // Add a modest border so white tile faces remain fully visible.
+ const padX=Math.max(5,(right-left)*.012),padY=Math.max(3,(Y1-Y0)*.06);
+ return {x:scanClamp((left-padX)/w,0,.96),y:scanClamp((Y0-padY)/h,0,.96),w:Math.min(1,(right-left+2*padX)/w),h:Math.min(1,(Y1-Y0+2*padY)/h)};
+}
+function scanAutoFrame(){
+ scanZoom=1;scanPan={x:0,y:0};
+ scanCrop=scanFindRow()||{x:.06,y:.49,w:.88,h:.26};
+ scanCrop.w=Math.min(scanCrop.w,1-scanCrop.x);scanCrop.h=Math.min(scanCrop.h,1-scanCrop.y);
+ drawScanPreview();if($('scanZoomRange'))$('scanZoomRange').value='1';
+}
+function activateScanCrop(){
+ const frame=$('scanPhotoFrame'),box=$('scanCropBox');if(!frame||!box)return;
+ let drag=null,panDrag=null;
+ box.addEventListener('pointerdown',e=>{
+  if(e.button!==0&&e.pointerType==='mouse')return;
+  const rect=frame.getBoundingClientRect(),mode=e.target.dataset.corner||'move';
+  drag={id:e.pointerId,mode,startX:e.clientX,startY:e.clientY,base:{...scanCrop},width:rect.width,height:rect.height};
+  box.setPointerCapture(e.pointerId);e.preventDefault();
+ });
+ box.addEventListener('pointermove',e=>{
+  if(!drag||drag.id!==e.pointerId)return;
+  const dx=(e.clientX-drag.startX)/drag.width,dy=(e.clientY-drag.startY)/drag.height,b=drag.base;
+  let {x,y,w,h}=b;const minX=.035,minY=.035;
+  if(drag.mode==='move'){x=scanClamp(b.x+dx,0,1-w);y=scanClamp(b.y+dy,0,1-h);}
+  else{
+   if(drag.mode.includes('w')){x=scanClamp(b.x+dx,0,b.x+b.w-minX);w=b.x+b.w-x;}
+   if(drag.mode.includes('e'))w=scanClamp(b.w+dx,minX,1-b.x);
+   if(drag.mode.includes('n')){y=scanClamp(b.y+dy,0,b.y+b.h-minY);h=b.y+b.h-y;}
+   if(drag.mode.includes('s'))h=scanClamp(b.h+dy,minY,1-b.y);
+  }
+  scanCrop={x,y,w,h};drawScanPreview();e.preventDefault();
+ });
+ const stop=e=>{if(drag?.id===e.pointerId)drag=null;};box.addEventListener('pointerup',stop);box.addEventListener('pointercancel',stop);
+ frame.addEventListener('pointerdown',e=>{
+  if(e.target.closest('.scan-crop-box')||e.button!==0)return;
+  panDrag={id:e.pointerId,sx:e.clientX,sy:e.clientY,base:{...scanPan},r:frame.getBoundingClientRect()};
+  frame.setPointerCapture(e.pointerId);
+ });
+ frame.addEventListener('pointermove',e=>{
+  if(!panDrag||e.pointerId!==panDrag.id||scanZoom<=1)return;
+  const factor=2/(1-1/scanZoom);
+  scanPan={x:scanClamp(panDrag.base.x-(e.clientX-panDrag.sx)/panDrag.r.width*factor,-1,1),y:scanClamp(panDrag.base.y-(e.clientY-panDrag.sy)/panDrag.r.height*factor,-1,1)};
+  drawScanPreview();e.preventDefault();
+ });
+ frame.addEventListener('pointerup',()=>{panDrag=null;});frame.addEventListener('pointercancel',()=>{panDrag=null;});
+ frame.addEventListener('wheel',e=>{e.preventDefault();setScanZoom(scanZoom+(e.deltaY<0?.2:-.2));},{passive:false});
+ frame.addEventListener('dblclick',e=>{e.preventDefault();setScanZoom(scanZoom<2?2:1);});
+ frame.addEventListener('touchstart',e=>{if(e.touches.length===2){
+  scanPinchStart={dist:Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY),zoom:scanZoom};
+ }},{passive:true});
+ frame.addEventListener('touchmove',e=>{if(e.touches.length===2&&scanPinchStart){
+  const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+  if(scanPinchStart.dist>0)setScanZoom(scanPinchStart.zoom*d/scanPinchStart.dist);e.preventDefault();
+ }},{passive:false});
+ frame.addEventListener('touchend',e=>{if(e.touches.length<2)scanPinchStart=null;});
+}
 async function startBrowserCamera(){
  if(!navigator.mediaDevices?.getUserMedia){$('scanCameraInput').click();return;}
  try{
-  closeBrowserCamera();
-  scanCameraStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});
+  closeBrowserCamera();scanCameraStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});
   const panel=$('browserScanDialog')?.querySelector('.scan-panel');if(!panel){closeBrowserCamera();return;}
-  panel.innerHTML=`<h3>${scanText('Take Photo','拍照','撮影')}</h3><p class="hint">${scanText('Zoom in or out, then capture. Crop the image by dragging the frame on the next screen.','拍摄前可放大或缩小；拍完后拖拽裁剪框调整识别范围。','拡大・縮小して撮影し、次の画面で枠をドラッグして切り抜きます。')}</p><div style="overflow:hidden;border-radius:10px;background:#030a10"><video class="scan-camera-video" id="scanLiveCamera" autoplay playsinline muted></video></div><div class="scan-zoom-line"><button type="button" class="btn secondary" id="cameraZoomMinus">−</button><input type="range" id="cameraZoom" min="1" max="3" step="0.1" value="1" aria-label="Camera zoom"><button type="button" class="btn secondary" id="cameraZoomPlus">+</button><span id="cameraZoomValue">1.0×</span></div><div class="row"><button type="button" class="btn primary" id="scanCapture">${scanText('📷 Capture','📷 拍摄','📷 撮影')}</button><button type="button" class="btn secondary" id="cameraUpload">${scanText('Upload instead','改为上传','アップロード')}</button><button type="button" class="btn secondary" id="cameraCancel">${scanText('Cancel','取消','キャンセル')}</button></div>`;
+  panel.innerHTML=`<h3>${scanText('Take Photo','拍照','撮影')}</h3><p class="hint">${scanText('Zoom before shooting. After capture, drag the highlighted crop frame to include only the face-up tiles.','拍摄前可以缩放；拍摄后拖动高亮裁剪框，只框住正面朝上的麻将牌。','撮影前に拡大・縮小、撮影後に牌の部分を枠で囲ってください。')}</p><div style="overflow:hidden;border-radius:10px;background:#030a10"><video class="scan-camera-video" id="scanLiveCamera" autoplay playsinline muted></video></div><div class="scan-zoom-line"><button type="button" class="btn secondary" id="cameraZoomMinus">−</button><input type="range" id="cameraZoom" min="1" max="3" step="0.1" value="1" aria-label="Camera zoom"><button type="button" class="btn secondary" id="cameraZoomPlus">+</button><span id="cameraZoomValue">1.0×</span></div><div class="row"><button type="button" class="btn primary" id="scanCapture">${scanText('📷 Capture','📷 拍摄','📷 撮影')}</button><button type="button" class="btn secondary" id="cameraUpload">${scanText('Upload instead','改为上传','アップロード')}</button><button type="button" class="btn secondary" id="cameraCancel">${scanText('Cancel','取消','キャンセル')}</button></div>`;
   const video=$('scanLiveCamera');video.srcObject=scanCameraStream;await video.play();
-  const track=scanCameraStream.getVideoTracks()[0];const cap=track.getCapabilities?.();
-  const hardwareZoom=cap?.zoom;
+  const track=scanCameraStream.getVideoTracks()[0],cap=track.getCapabilities?.(),hardwareZoom=cap?.zoom;
   if(hardwareZoom){$('cameraZoom').min=String(hardwareZoom.min);$('cameraZoom').max=String(Math.min(hardwareZoom.max,5));$('cameraZoom').step=String(hardwareZoom.step||.1);$('cameraZoom').value=String(Math.max(hardwareZoom.min,1));}
   scanCameraZoom=1;
   const applyZoom=async()=>{
@@ -690,131 +816,182 @@ async function startBrowserCamera(){
   $('cameraCancel').onclick=closeBrowserScan;
   $('scanCapture').onclick=()=>{
    if(!video.videoWidth)return;
-   const canvas=document.createElement('canvas');const scale=Math.min(1,1600/Math.max(video.videoWidth,video.videoHeight));canvas.width=Math.round(video.videoWidth*scale);canvas.height=Math.round(video.videoHeight*scale);
-   const ctx=canvas.getContext('2d');
-   if(hardwareZoom){ctx.drawImage(video,0,0,canvas.width,canvas.height);}else{
-    const z=scanCameraZoom,sw=video.videoWidth/z,sh=video.videoHeight/z;
-    ctx.drawImage(video,(video.videoWidth-sw)/2,(video.videoHeight-sh)/2,sw,sh,0,0,canvas.width,canvas.height);
-   }
-   closeBrowserCamera();browserScanImage=canvas;showBrowserScanReview();
+   const c=document.createElement('canvas'),scale=Math.min(1,1800/Math.max(video.videoWidth,video.videoHeight));
+   c.width=Math.round(video.videoWidth*scale);c.height=Math.round(video.videoHeight*scale);
+   const ctx=c.getContext('2d');if(hardwareZoom)ctx.drawImage(video,0,0,c.width,c.height);
+   else{const z=scanCameraZoom,sw=video.videoWidth/z,sh=video.videoHeight/z;ctx.drawImage(video,(video.videoWidth-sw)/2,(video.videoHeight-sh)/2,sw,sh,0,0,c.width,c.height);}
+   closeBrowserCamera();browserScanImage=c;showBrowserScanReview();
   };
  }catch(e){closeBrowserCamera();$('scanCameraInput').click();}
 }
-function drawScanPreview(){
- const canvas=$('scanPhotoCanvas');if(!canvas||!browserScanImage)return;
- const src=browserScanImage;canvas.width=src.width;canvas.height=src.height;
- const ctx=canvas.getContext('2d');const z=scanZoom,sw=src.width/z,sh=src.height/z;
- ctx.clearRect(0,0,canvas.width,canvas.height);
- ctx.drawImage(src,(src.width-sw)/2,(src.height-sh)/2,sw,sh,0,0,canvas.width,canvas.height);
- const b=$('scanCropBox');if(b){b.style.left=(scanCrop.x*100)+'%';b.style.top=(scanCrop.y*100)+'%';b.style.width=(scanCrop.w*100)+'%';b.style.height=(scanCrop.h*100)+'%';}
- if($('scanZoomValue'))$('scanZoomValue').textContent=scanZoom.toFixed(1)+'×';
-}
-function setScanZoom(v){scanZoom=Math.max(1,Math.min(4,Math.round(v*10)/10));if($('scanZoomRange'))$('scanZoomRange').value=String(scanZoom);drawScanPreview();}
-function activateScanCrop(){
- const frame=$('scanPhotoFrame'),box=$('scanCropBox');if(!frame||!box)return;
- let drag=null;
- box.addEventListener('pointerdown',e=>{
-  if(e.button!==0&&e.pointerType==='mouse')return;
-  const pos=frame.getBoundingClientRect();const mode=e.target.dataset.corner||'move';
-  drag={mode,startX:e.clientX,startY:e.clientY,base:{...scanCrop},width:pos.width,height:pos.height};
-  box.setPointerCapture(e.pointerId);e.preventDefault();
- });
- box.addEventListener('pointermove',e=>{
-  if(!drag)return;
-  let dx=(e.clientX-drag.startX)/drag.width,dy=(e.clientY-drag.startY)/drag.height;
-  const b=drag.base;let x=b.x,y=b.y,w=b.w,h=b.h;const min=.08;
-  if(drag.mode==='move'){x=Math.max(0,Math.min(1-w,b.x+dx));y=Math.max(0,Math.min(1-h,b.y+dy));}
-  else{
-   if(drag.mode.includes('w')){x=Math.max(0,Math.min(b.x+b.w-min,b.x+dx));w=b.w+(b.x-x);}
-   if(drag.mode.includes('e'))w=Math.max(min,Math.min(1-b.x,b.w+dx));
-   if(drag.mode.includes('n')){y=Math.max(0,Math.min(b.y+b.h-min,b.y+dy));h=b.h+(b.y-y);}
-   if(drag.mode.includes('s'))h=Math.max(min,Math.min(1-b.y,b.h+dy));
-  }
-  scanCrop={x,y,w,h};drawScanPreview();e.preventDefault();
- });
- const stop=()=>{drag=null;};box.addEventListener('pointerup',stop);box.addEventListener('pointercancel',stop);
- frame.addEventListener('touchstart',e=>{if(e.touches.length===2){scanPinchStart={dist:Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY),zoom:scanZoom};}},{passive:true});
- frame.addEventListener('touchmove',e=>{if(e.touches.length===2&&scanPinchStart){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);setScanZoom(scanPinchStart.zoom*d/scanPinchStart.dist);e.preventDefault();}},{passive:false});
- frame.addEventListener('touchend',e=>{if(e.touches.length<2)scanPinchStart=null;});
-}
-
 async function handleBrowserTilePhoto(input){
  const file=input.files?.[0];input.value='';if(!file)return;
  if(!file.type.startsWith('image/')){alert(scanText('Select an image.','请选择图片文件。','画像を選択してください。'));return;}
- const url=URL.createObjectURL(file);const img=new Image();
+ const url=URL.createObjectURL(file),img=new Image();
  try{await new Promise((resolve,reject)=>{img.onload=resolve;img.onerror=reject;img.src=url;});}
  catch(e){URL.revokeObjectURL(url);alert(scanText('Could not open image.','无法打开图片。','画像を開けません。'));return;}
- // Draw onto a bounded canvas to avoid retaining large camera images.
- const max=1600,scale=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight));
+ const max=1800,scale=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight));
  const c=document.createElement('canvas');c.width=Math.round(img.naturalWidth*scale);c.height=Math.round(img.naturalHeight*scale);
  c.getContext('2d',{willReadFrequently:true}).drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(url);
  browserScanImage=c;showBrowserScanReview();
 }
 function showBrowserScanReview(){
  let panel=$('browserScanDialog')?.querySelector('.scan-panel');if(!panel){showScanChoice();panel=$('browserScanDialog').querySelector('.scan-panel');}
- scanZoom=1;scanCrop={x:.03,y:.2,w:.94,h:.65};
- panel.innerHTML=`<h3>${scanText('Crop photo & recognize tiles','拖拽裁剪并识牌','枠をドラッグして牌を認識')}</h3><p class="hint">${scanText('Drag the gold box to move it. Drag its corners to resize. Zoom with the buttons, slider, or two fingers; the recognition will only use the visible area inside the frame.','拖动金色边框可移动裁剪区域，拖动四角可调整大小。通过按钮、滑块或双指缩放图片；仅识别裁剪框内的牌。','金色の枠を移動し、角をドラッグしてサイズを変更。ボタン・スライダー・ピンチで拡大縮小できます。枠内だけを認識します。')}</p><div class="scan-viewport" id="scanPhotoFrame"><canvas id="scanPhotoCanvas" aria-label="Photo for cropping"></canvas><div class="scan-crop-box" id="scanCropBox" role="group" aria-label="Draggable crop area"><span class="scan-handle nw" data-corner="nw"></span><span class="scan-handle ne" data-corner="ne"></span><span class="scan-handle sw" data-corner="sw"></span><span class="scan-handle se" data-corner="se"></span></div></div><div class="scan-zoom-line"><button class="btn secondary" type="button" id="scanZoomMinus" aria-label="Zoom out">−</button><input type="range" id="scanZoomRange" aria-label="Image zoom" min="1" max="4" step="0.1" value="1"><button class="btn secondary" type="button" id="scanZoomPlus" aria-label="Zoom in">+</button><span id="scanZoomValue">1.0×</span><button class="btn secondary" type="button" id="scanCropReset">${scanText('Reset','重置','リセット')}</button></div><div class="field" style="max-width:180px"><label>${scanText('Number of tiles','牌数','牌の枚数')}</label><input type="number" id="scanTileCount" min="1" max="14" value="13"></div><div class="row" style="margin-top:12px"><button class="btn primary" id="scanRecognizeBtn">${scanText('Recognize cropped tiles','识别框内麻将牌','枠内の牌を認識')}</button><button class="btn secondary" id="scanChooseOther">${scanText('Choose another photo','重新选择照片','別の画像を選択')}</button><button class="btn secondary" id="scanClose">${scanText('Close','关闭','閉じる')}</button></div><div id="scanProposals"></div>`;
- drawScanPreview();activateScanCrop();
+ scanZoom=1;scanPan={x:0,y:0};
+ panel.innerHTML=`<h3>${scanText('Crop and zoom the photo','裁剪并放大照片','写真の切り抜きと拡大')}</h3><p class="scan-tip">${scanText('Drag the GOLD frame over the face-up tile row. Drag the 8 handles to resize it. Use + / − / the slider / mouse wheel / pinch to zoom the photo. Drag outside the frame to pan when zoomed.','把金色框拖到正面朝上的麻将牌上。拖动八个手柄调整边界。使用 +、−、滑块、鼠标滚轮或双指缩放；放大后在框外拖动可平移图片。','金色の枠を牌の列に重ね、8つのハンドルで大きさを調整してください。+・−・スライダー・ピンチで拡大できます。')}</p><div class="scan-zoom-line"><button class="btn secondary" type="button" id="scanZoomMinus">−</button><input type="range" id="scanZoomRange" aria-label="Image zoom" min="1" max="6" step="0.1" value="1"><button class="btn secondary" type="button" id="scanZoomPlus">+</button><b id="scanZoomValue">1.0×</b><button class="btn secondary" type="button" id="scanAutoFind">${scanText('Auto-find tiles','自动定位牌区','牌を自動検出')}</button><button class="btn secondary" type="button" id="scanCropReset">${scanText('Reset view','重置视图','ビューをリセット')}</button></div><div class="scan-viewport" id="scanPhotoFrame" aria-label="Interactive cropping and zooming"><canvas id="scanPhotoCanvas" aria-label="Photo for cropping"></canvas><div class="scan-crop-box" id="scanCropBox" role="group" aria-label="Drag to crop the tiles"><span class="scan-crop-label">${scanText('CROP AREA','裁剪区域','切り抜き範囲')}</span>${['nw','n','ne','e','se','s','sw','w'].map(p=>`<span class="scan-handle ${p}" data-corner="${p}"></span>`).join('')}</div></div><div class="scan-live-crop"><b>${scanText('LIVE CROP PREVIEW — only this image will be scanned','实时裁剪预览 — 只识别这里显示的图片','切り抜きプレビュー')}</b><canvas id="scanCropLiveCanvas" aria-label="Live crop preview"></canvas><span class="scan-tip">${scanText('If this strip contains green table or orange edges, adjust the gold frame before recognizing.','如果这条预览里还有绿色桌布或橙色边缘，请先收紧上面的金色框。','背景が入る場合は枠を調整してください。')}</span></div><div class="field" style="max-width:220px"><label>${scanText('Number of tiles (1–14)','识别牌数（1–14）','牌の枚数（1–14）')}</label><input type="number" id="scanTileCount" min="1" max="14" value="14"></div><div class="row" style="margin-top:12px"><button class="btn primary" id="scanRecognizeBtn">${scanText('Recognize cropped tiles','识别框内麻将牌','枠内の牌を認識')}</button><button class="btn secondary" id="scanChooseOther">${scanText('Choose another photo','重新选择照片','別の画像を選択')}</button><button class="btn secondary" id="scanClose">${scanText('Close','关闭','閉じる')}</button></div><div id="scanProposals"></div>`;
+ scanAutoFrame();activateScanCrop();
  $('scanZoomRange').oninput=e=>setScanZoom(Number(e.target.value));
  $('scanZoomMinus').onclick=()=>setScanZoom(scanZoom-.2);
  $('scanZoomPlus').onclick=()=>setScanZoom(scanZoom+.2);
- $('scanCropReset').onclick=()=>{scanCrop={x:.03,y:.2,w:.94,h:.65};setScanZoom(1);};
+ $('scanAutoFind').onclick=scanAutoFrame;
+ $('scanCropReset').onclick=()=>{scanZoom=1;scanPan={x:0,y:0};scanCrop={x:.05,y:.05,w:.9,h:.9};drawScanPreview();$('scanZoomRange').value='1';};
  $('scanRecognizeBtn').onclick=()=>recognizeBrowserTiles();
  $('scanChooseOther').onclick=showScanChoice;
  $('scanClose').onclick=closeBrowserScan;
 }
-// Histogram/edge features from a crop. Matching reference faces is tentative,
-// since lighting and perspective changes are not modeled by this lightweight recognizer.
-function scanFeatures(canvas){
- const ctx=document.createElement('canvas');ctx.width=24;ctx.height=36;
- const g=ctx.getContext('2d',{willReadFrequently:true});g.drawImage(canvas,0,0,24,36);
- const data=g.getImageData(0,0,24,36).data;const out=[];
- let mean=0;const gray=[];
- for(let i=0;i<data.length;i+=4){const r=data[i],g=data[i+1],b=data[i+2];const lum=(.299*r+.587*g+.114*b)/255;gray.push(lum);mean+=lum;}
- mean/=gray.length;
- for(let y=2;y<34;y+=2)for(let x=2;x<22;x+=2){const i=y*24+x;const edge=Math.abs(gray[i]-gray[i-1])+Math.abs(gray[i]-gray[i-24]);out.push(Math.min(1,edge*2.5));}
- out.push(mean);
+function scanGetCropCanvas(){
+ const src=$('scanPhotoCanvas');if(!src||!src.width)return null;
+ const x=Math.round(scanCrop.x*src.width),y=Math.round(scanCrop.y*src.height),w=Math.max(2,Math.round(scanCrop.w*src.width)),h=Math.max(2,Math.round(scanCrop.h*src.height));
+ const c=document.createElement('canvas');c.width=w;c.height=h;
+ c.getContext('2d',{willReadFrequently:true}).drawImage(src,x,y,w,h,0,0,w,h);
+ return c;
+}
+function scanTileSegments(c,count){
+ // Find bright, low-saturation tile faces; respect large gaps for separated winning tiles.
+ const w=c.width,h=c.height,ctx=c.getContext('2d',{willReadFrequently:true});
+ const id=ctx.getImageData(0,0,w,h).data,score=new Float32Array(w);
+ for(let x=0;x<w;x++)for(let y=Math.round(h*.07);y<Math.round(h*.89);y+=2){
+  const i=(y*w+x)*4,r=id[i],g=id[i+1],b=id[i+2];
+  if((r+g+b)/3>150 && Math.max(r,g,b)-Math.min(r,g,b)<95 && Math.min(r,g,b)>110)score[x]++;
+ }
+ const window=Math.max(1,Math.round(w*.004)),smooth=new Float32Array(w),max=Math.max(...score);
+ if(max<Math.max(4,h*.05))return null;
+ for(let x=0;x<w;x++){let sum=0,n=0;for(let j=Math.max(0,x-window);j<=Math.min(w-1,x+window);j++){sum+=score[j];n++;}smooth[x]=sum/n;}
+ const th=Math.max(2,max*.22),raw=[];let start=-1;
+ for(let x=0;x<=w;x++){
+  if(x<w&&smooth[x]>=th){if(start<0)start=x;}
+  else if(start>=0){raw.push({l:start,r:x});start=-1;}
+ }
+ const expected=w/count,joinGap=Math.max(3,expected*.20),runs=[];
+ for(const r of raw){if(runs.length&&r.l-runs[runs.length-1].r<joinGap)runs[runs.length-1].r=r.r;else runs.push({...r});}
+ let groups=runs.filter(g=>g.r-g.l>=Math.max(5,expected*.38));
+ if(!groups.length||groups.length>count)return null;
+ // Ignore stray white detections outside the crop row when they are tiny.
+ const tot=groups.reduce((v,g)=>v+g.r-g.l,0);if(tot<w*.12)return null;
+ let allocations=groups.map(g=>1),remaining=count-groups.length;
+ while(remaining>0){let best=0,bestScore=-Infinity;
+  for(let j=0;j<groups.length;j++){const fairness=(groups[j].r-groups[j].l)/allocations[j];if(fairness>bestScore){bestScore=fairness;best=j;}}
+  allocations[best]++;remaining--;
+ }
+ const segments=[];
+ groups.forEach((g,j)=>{const n=allocations[j];for(let k=0;k<n;k++){
+  const aw=(g.r-g.l)/n,l=Math.max(0,g.l+aw*k-aw*.03),r=Math.min(w,g.l+aw*(k+1)+aw*.03);
+  segments.push({x:l,w:r-l});
+ }});
+ return segments.length===count?segments:null;
+}
+function scanFeaturesV2(canvas){
+ // Low-resolution ink/color masks are normalized to be less sensitive to different tile artwork.
+ const c=document.createElement('canvas');c.width=32;c.height=44;
+ const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(canvas,0,0,32,44);
+ const p=g.getImageData(0,0,32,44).data,arr=[];
+ for(let yy=1;yy<11;yy++)for(let xx=1;xx<7;xx++){
+  let ink=0,red=0,green=0,n=0;
+  for(let y=Math.round(yy*4);y<Math.min(44,Math.round((yy+1)*4));y++)for(let x=Math.round(xx*4.5);x<Math.min(32,Math.round((xx+1)*4.5));x++){
+   const i=(y*32+x)*4,r=p[i],gg=p[i+1],b=p[i+2],lum=(r+gg+b)/3;
+   ink+=scanClamp((195-lum)/190,0,1);red+=r>gg*1.22&&r>b*1.20&&r>85?1:0;green+=(gg>r*1.14&&gg>b*.88&&gg>75)?1:0;n++;
+  }
+  arr.push(ink/n,red/n,green/n);
+ }
+ return arr;
+}
+let scanRefPromise=null;
+function scanReferenceFeatures(){
+ if(!scanRefPromise)scanRefPromise=Promise.all(tiles.map(t=>new Promise(resolve=>{
+  const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=i.width;c.height=i.height;c.getContext('2d').drawImage(i,0,0);resolve([t,scanFeaturesV2(c)]);};
+  i.onerror=()=>resolve([t,[]]);i.src=originalTileArt[t];
+ }))).then(Object.fromEntries);
+ return scanRefPromise;
+}
+function scanNormalizeTile(canvas){
+ const w=canvas.width,h=canvas.height,ctx=canvas.getContext('2d',{willReadFrequently:true}),data=ctx.getImageData(0,0,w,h).data;
+ const rows=new Int32Array(h),cols=new Int32Array(w);
+ for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+  const i=(y*w+x)*4,r=data[i],g=data[i+1],b=data[i+2];
+  if((r+g+b)/3>154&&Math.max(r,g,b)-Math.min(r,g,b)<90&&Math.min(r,g,b)>120){rows[y]++;cols[x]++;}
+ }
+ let y0=h,y1=-1,x0=w,x1=-1;
+ for(let y=0;y<h;y++)if(rows[y]>w*.18){y0=Math.min(y0,y);y1=y;}
+ for(let x=0;x<w;x++)if(cols[x]>h*.12){x0=Math.min(x0,x);x1=x;}
+ if(x1<=x0||y1<=y0)return canvas;
+ x0=Math.max(0,x0-2);y0=Math.max(0,y0-3);x1=Math.min(w,x1+3);y1=Math.min(h,y1+4);
+ const out=document.createElement('canvas');out.width=96;out.height=126;
+ const g=out.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,96,126);
+ g.drawImage(canvas,x0,y0,x1-x0,y1-y0,0,0,96,126);
  return out;
 }
-let referenceFeaturesPromise=null;
-function referenceFeatures(){
- if(!referenceFeaturesPromise)referenceFeaturesPromise=Promise.all(tiles.map(t=>new Promise(resolve=>{
-  const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=i.width;c.height=i.height;c.getContext('2d').drawImage(i,0,0);resolve([t,scanFeatures(c)]);};i.onerror=()=>resolve([t,[]]);i.src=originalTileArt[t];
- }))).then(Object.fromEntries);
- return referenceFeaturesPromise;
+function scanMatch(segments,refs){
+ return segments.map(c=>{
+  const v=scanFeaturesV2(scanNormalizeTile(c)),scores=tiles.map(t=>{
+   const r=refs[t]||[];if(r.length!==v.length)return[t,1e9];
+   let err=0;for(let j=0;j<v.length;j++){const factor=(j%3===0)?1:.55;err+=(v[j]-r[j])**2*factor;}
+   return[t,Math.sqrt(err/v.length)];
+  }).sort((a,b)=>a[1]-b[1]);
+  const best=scores[0],next=scores[1],gap=(next[1]-best[1])/(next[1]+.001);
+  // A weak match is NEVER silently assigned a tile. Review is required.
+  const confident=best[1]<.11 && gap>.18;
+  return {image:c,code:confident?best[0]:'',suggestion:best[0],confidence:confident};
+ });
 }
 async function recognizeBrowserTiles(){
- const count=Math.min(14,Math.max(1,Math.trunc(Number($('scanTileCount').value)||13))); $('scanTileCount').value=count;
- const image=$('scanPhotoCanvas'),W=image.width,H=image.height;
- const left=Math.round(scanCrop.x*W),y=Math.round(scanCrop.y*H);
- const width=Math.max(10,Math.round(scanCrop.w*W)),h=Math.max(4,Math.round(scanCrop.h*H));
- const refs=await referenceFeatures();browserScanRows=[];
- for(let n=0;n<count;n++){
-  const c=document.createElement('canvas');c.width=60;c.height=88;
-  // Keep the front face and trim a thin border of each equally spaced crop.
-  const x=left+n*width/count+width/count*.05;
-  c.getContext('2d',{willReadFrequently:true}).drawImage(image,x,y,width/count*.90,h,0,0,60,88);
-  const f=scanFeatures(c);const matches=tiles.map(t=>{const ref=refs[t]||[];const err=f.reduce((sum,v,i)=>sum+Math.pow(v-(ref[i]??0),2),0);return[t,err];}).sort((a,b)=>a[1]-b[1]);
-  browserScanRows.push({image:c,code:matches[0][0]});
+ const root=$('scanProposals');root.innerHTML='';
+ const input=$('scanTileCount'),requested=Math.trunc(Number(input.value));
+ if(!Number.isInteger(requested)||requested<1||requested>14){alert(scanText('Enter 1–14 tiles.','请输入 1 至 14 张牌。','枚数は1～14で入力してください。'));return;}
+ const cropped=scanGetCropCanvas();if(!cropped||cropped.width<30||cropped.height<20)return;
+ // Avoid scanning an overly tall/empty crop that mostly includes the table, not tile faces.
+ const ratio=cropped.width/cropped.height;
+ if(ratio<1.25 && requested>=5){alert(scanText('Crop one horizontal row of face-up tiles before recognizing.','请先把裁剪框收紧到横向排列的正面麻将牌。','牌の横一列だけを切り抜いてください。'));return;}
+ const slices=scanTileSegments(cropped,requested),segments=[];
+ if(!slices){
+  root.innerHTML=`<div class="scan-review-warning">${scanText('Could not locate individual tile faces. Make the gold crop frame tighter around a single row of face-up tiles, then try again.','未能定位独立牌面。请将金色裁剪框收紧至一排正面麻将牌，不要包括桌面或牌背。','牌の位置を検出できません。切り抜き範囲を調整してください。')}</div>`;
+  return;
  }
- renderBrowserScanProposals();
+ for(const slice of slices){const c=document.createElement('canvas');c.width=96;c.height=126;
+  const g=c.getContext('2d',{willReadFrequently:true});g.fillStyle='#fff';g.fillRect(0,0,96,126);
+  g.drawImage(cropped,slice.x,0,slice.w,cropped.height,0,0,96,126);segments.push(c);
+ }
+ root.innerHTML=`<p class="hint">${scanText('Analyzing tile faces…','正在分析牌面…','牌を解析しています…')}</p>`;
+ try{const refs=await scanReferenceFeatures();browserScanRows=scanMatch(segments,refs);renderBrowserScanProposals();}
+ catch(e){root.innerHTML=`<div class="scan-review-warning">${scanText('Could not read tile references. Please retry.','无法读取识别参考牌面，请重试。','認識用画像を読み取れません。')}</div>`;}
+}
+function scanShowTileLarge(c,index){
+ const layer=document.createElement('div');layer.className='scan-img-lightbox';layer.setAttribute('role','dialog');layer.setAttribute('aria-label',`Tile ${index+1} zoom`);
+ const copy=document.createElement('canvas');copy.width=c.width*4;copy.height=c.height*4;copy.getContext('2d').drawImage(c,0,0,copy.width,copy.height);
+ const button=document.createElement('button');button.className='btn secondary';button.textContent=scanText('Close zoom','关闭放大图','拡大を閉じる');
+ button.onclick=()=>layer.remove();layer.onclick=e=>{if(e.target===layer)layer.remove();};
+ layer.append(copy,button);document.body.append(layer);
 }
 function renderBrowserScanProposals(){
- const root=$('scanProposals');root.innerHTML=`<p class="hint">${scanText('Please verify every tile. Tap each dropdown to correct incorrect recognition. No tiles are imported until confirmation.','请逐张核对识别结果；错误的牌可以下拉更改，确认前不会导入。','一枚ずつ確認し、誤認識を修正してください。確定前には取り込みません。')}</p><div class="scan-review-grid" id="scanReviewGrid"></div><div class="row"><button class="btn primary" type="button" id="scanImport">${scanText('Import confirmed tiles','确认并导入','確認して取り込む')}</button><button class="btn secondary" type="button" id="scanRetry">${scanText('Retry crop','重新裁剪识别','範囲を再指定')}</button></div>`;
+ const root=$('scanProposals'),unknown=browserScanRows.filter(r=>!r.code).length;
+ root.innerHTML=`<div class="scan-review-warning">${scanText('Review the actual tile face in each thumbnail. Uncertain results are intentionally left blank instead of inventing a tile. Click a thumbnail to enlarge it.','请核对每张缩略图中的真实牌面。识别不确定的牌会留空，不会乱猜。点击缩略图可放大查看。','すべての牌を確認してください。不明な牌は空欄のままにします。画像をクリックすると拡大できます。')}${unknown?` <b>(${unknown} ${scanText('need confirmation','张待确认','枚要確認')})</b>`:''}</div><div class="scan-review-grid" id="scanReviewGrid"></div><div class="row"><button class="btn primary" type="button" id="scanImport">${scanText('Import checked tiles','确认牌型并导入','確認して取り込む')}</button><button class="btn secondary" type="button" id="scanRetry">${scanText('Adjust crop again','重新调整裁剪框','切り抜きを調整')}</button></div>`;
  const grid=$('scanReviewGrid');
  browserScanRows.forEach((r,i)=>{
   const item=document.createElement('div');item.className='scan-review-item';
+  const heading=document.createElement('span');heading.className='scan-tile-title';heading.textContent=`${scanText('Tile','第','牌')} ${i+1}`;
   const crop=document.createElement('canvas');crop.width=r.image.width;crop.height=r.image.height;crop.getContext('2d').drawImage(r.image,0,0);
+  crop.title=scanText('Click to enlarge','点击放大牌面','クリックで拡大');crop.onclick=()=>scanShowTileLarge(r.image,i);
   const sel=document.createElement('select');sel.setAttribute('aria-label',`Tile ${i+1}`);
+  const unknownOption=document.createElement('option');unknownOption.value='';unknownOption.textContent=scanText('— Select tile —','— 请手动选牌 —','— 牌を選ぶ —');sel.append(unknownOption);
   for(const t of tiles){const op=document.createElement('option');op.value=t;op.textContent=`${tileName(t)} (${t})`;sel.append(op);}
-  sel.value=r.code;sel.onchange=()=>{r.code=sel.value;};
-  item.append(crop,sel);grid.append(item);
+  sel.value=r.code;sel.classList.toggle('scan-unknown',!r.code);
+  sel.onchange=()=>{r.code=sel.value;sel.classList.toggle('scan-unknown',!r.code);};
+  item.append(heading,crop,sel);grid.append(item);
  });
- $('scanRetry').onclick=()=>{root.innerHTML='';$('scanPhotoFrame')?.scrollIntoView({block:'nearest',behavior:'smooth'});};
+ $('scanRetry').onclick=()=>{root.innerHTML='';$('scanPhotoFrame')?.scrollIntoView({block:'center',behavior:'smooth'});};
  $('scanImport').onclick=()=>{
+  if(browserScanRows.some(r=>!r.code)){alert(scanText('Select every unrecognized tile before importing.','请先手动选择所有待确认的麻将牌。','未確認の牌を選択してください。'));return;}
   const result=applyScannedTiles(browserScanRows.map(r=>r.code));
-  if(!result.ok){alert(result.message);return;}
-  closeBrowserScan();
+  if(!result.ok){alert(result.message);return;}closeBrowserScan();
  };
 }
 updateIndicatorPreview();updateBrowserScanLabels();
